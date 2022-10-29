@@ -1,3 +1,14 @@
+def model():
+    
+    face = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_frontalface_alt.xml")
+
+# loading haarcascade file for left eye detection
+    leye = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_lefteye_2splits.xml")
+
+# loading haarcascade file for right eye detection
+    reye = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_righteye_2splits.xml")
+
+
 def live_detection():
     # Computer Vision - display camera output, read image and video formats
     import cv2
