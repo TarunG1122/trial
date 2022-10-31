@@ -26,6 +26,8 @@ def model():
 
 # loading haarcascade file for right eye detection
     reye = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_righteye_2splits.xml")
+    
+    return face, leye , reye
 
 
 def live_detection():
