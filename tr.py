@@ -30,7 +30,7 @@ def model():
     return face, leye , reye
 
 
-def live_detection():
+def live_detection(face,leye,reye):
     # Computer Vision - display camera output, read image and video formats
     import cv2
 
