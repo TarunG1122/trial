@@ -1,3 +1,22 @@
+#Computer Vision - display camera output, read image and video formats
+import cv2
+
+#system 
+import os
+
+#to open the trained image dataset
+from keras.models import load_model
+
+#to perform mathematical operations on arrays
+import numpy as np
+
+
+
+# to perform time related operations
+import time
+
+from google.colab.patches import cv2_imshow
+
 def model():
     
     face = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_frontalface_alt.xml")
