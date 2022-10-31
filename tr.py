@@ -18,7 +18,7 @@ import time
 from google.colab.patches import cv2_imshow
 
 def model():
-    
+    import cv2
     face = cv2.CascadeClassifier(r"/content/Driver-Drowsiness-detection-using-CNN-and-open-cv-with-warning-alarm/haar cascade files/haarcascade_frontalface_alt.xml")
 
 # loading haarcascade file for left eye detection
