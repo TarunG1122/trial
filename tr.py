@@ -47,7 +47,7 @@ def live_detection():
     from google.colab.patches import cv2_imshow
 
     cnt = 0
-    cap = cv2.VideoCapture(video_path)
+    cap = cv2.VideoCapture("/content/oc.mp4")
     while True:
         # will read each frame and we store the image in a frame variable.
         ret, frame = cap.read()
